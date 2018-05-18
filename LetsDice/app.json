@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Let's Dice",
+    "backgroundColor": "purple",
+    "backgroundTextStyle": "black",
+    "enablePullDownRefresh": false
+  }
+}

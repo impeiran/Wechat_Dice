@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<template name="first">
+    <view class="first face">
+        <span class="pip center"></span>
+    </view>
+</template>
+
+<template name="second">
+    <view class="second face">
+        <span class="pip"></span>
+        <span class="pip corner-RD"></span>
+    </view>
+</template>
+
+<template name="third">
+    <view class="third face">
+        <span class="pip"></span>
+        <span class="pip center"></span>
+        <span class="pip corner-RD"></span>
+    </view>
+</template>
+
+<template name="fourth">
+    <view class="fourth face">
+            <span class="pip"></span>
+            <span class="pip corner-RU"></span>
+            <span class="pip corner-RD"></span>
+            <span class="pip corner-LD"></span>
+    </view>
+</template>
+
+<template name="fifth">
+    <view class="fifth face">
+            <span class="pip"></span>
+            <span class="pip center"></span>
+            <span class="pip corner-RU"></span>
+            <span class="pip corner-RD"></span>
+            <span class="pip corner-LD"></span>
+    </view>
+</template>
+
+<template name="sixth">
+    <view class="sixth face">
+        <!--按照列排列三个点-->
+        <view class="column">
+            <span class="pip six1"></span>
+            <span class="pip six2"></span>
+            <span class="pip six3"></span>
+        </view> 
+         <!--按照列排列另外三个点-->
+        <view class="column">
+            <span class="pip six4"></span>
+            <span class="pip six5"></span>
+            <span class="pip six6"></span>
+        </view>
+    </view>
+</template>
+
+
+<view class="container">
+  <view class='first-row'>
+    <view class='case case1' >
+      <template is="{{dice[num0]}}"></template>
+    </view>
+    <view class='case case2' >
+      <template is="{{dice[num1]}}"></template>
+    </view>  
+  </view>
+  <view class='second-row' >
+    <view class='case case3 center' >
+      <template is="{{dice[num2]}}"></template>
+    </view> 
+  </view>
+  <view class='third-row'>
+    <view class='case case4'>
+      <template is="{{dice[num3]}}"></template>
+    </view>  
+    <view class='case case5'>  
+      <template is="{{dice[num4]}}"></template>
+    </view>  
+  </view>
+  <button bindtap='shake' class="{{btnType}} ">{{btnValue}}</button>
+  <audio id='mA'></audio>
+</view>
+<view class='foot'>
+  <text>developer : pei ran</text>
+</view>
